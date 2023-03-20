@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.css";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+@font-face {
+    font-family: 'Fasthand';
+    src: url('../assets/fonts/fasthand/Fasthand-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+html, body {
+    height: 100vh;
+    overflow-x: hidden;
+    margin: 0 !important;
+    font-family: Fasthand;
+}
