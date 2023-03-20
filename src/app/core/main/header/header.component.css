@@ -1,28 +1,44 @@
 a { 
     text-decoration: none;
     cursor: pointer;
-    color: whitesmoke;
 }
 
-header { 
-    height: 10vh;
+header mat-toolbar { 
+    min-height: 10vh;
 }
 
-.logo {
+html {
     font-size: 16px;
 }
 
 h1 {
     color: whitesmoke;
     font-family: fasthand;
-    font-size: clamp(0.5em, 1.5em + 1vw, 3em);
+    font-size: clamp(0.5rem, 1.5rem + 1vw, 3rem);
 }
 
 .logo p {
     color: whitesmoke;
-    font-size: clamp(0.5em, 0.5em + 1vw, 1em);
+    font-family: fasthand;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1.2rem);
 }
 
 header mat-toolbar {
     background-color: black;
+}
+
+button {
+    color: whitesmoke;
+    border: none;
+    background-color: black;
+}
+
+.menu {
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-size: clamp(0.5rem, 1.5rem + 1vw, 2rem);
+}
+
+.menu a {
+    color: black;
 }

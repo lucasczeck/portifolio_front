@@ -2,8 +2,9 @@
     <mat-toolbar>
         <mat-toolbar-row class="d-flex justify-content-between align-items-center">
             <div class="logo">
-                <a>
+                <a class="d-flex gap-3 justify-content-center">
                     <h1>Lucas Czeck</h1>
+                    <p>Software Developer</p>
                 </a>                
             </div>
             <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
@@ -12,7 +13,7 @@
         </mat-toolbar-row>
     </mat-toolbar>
     
-    <div *ngIf="sideMenu" class="col-md-2 col-12 d-flex flex-column" style="background-color: brown;">
+    <div *ngIf="sideMenu" class="menu col-md-2 col-12 d-flex flex-column">
         <a class="text-center h-25 mt-4">Sobre mim</a>
         <a class="text-center h-25 mt-4">Projetos</a>
         <a class="text-center h-25 mt-4 mb-4">Contato</a>
