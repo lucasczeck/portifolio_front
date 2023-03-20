@@ -8,11 +8,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/main/header/header.component';
+import { SummaryComponent } from './core/main/summary/summary.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    SummaryComponent
   ],
   imports: [
     BrowserModule,
