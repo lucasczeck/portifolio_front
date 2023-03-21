@@ -27,18 +27,31 @@ header mat-toolbar {
     background-color: black;
 }
 
-button {
+header button {
     color: whitesmoke;
     border: none;
     background-color: black;
 }
 
-.menu {
-    background-color: whitesmoke;
-    font-size: 16px;
-    font-size: clamp(0.5rem, 1.5rem + 1vw, 1.5rem);
-}
-
 .menu a {
     color: black;
 }
+
+.menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 300px;
+    background-color: whitesmoke;
+    font-size: 16px;
+    font-size: clamp(0.5rem, 1.5rem + 1vw, 1.5rem);
+    z-index: 10;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .show {
+    transform: translateX(0) !important;
+  }
+  

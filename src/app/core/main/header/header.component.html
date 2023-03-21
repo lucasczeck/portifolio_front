@@ -1,20 +1,24 @@
 <header class="row d-flex flex-row-reverse">
     <mat-toolbar>
-        <mat-toolbar-row class="d-flex justify-content-between align-items-center">
-            <div class="logo">
-                <a class="d-flex gap-3 justify-content-center">
-                    <h1>Lucas Czeck</h1>
-                    <p>Software Developer</p>
-                </a>                
-            </div>
-            <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
-                <mat-icon>menu</mat-icon>
-            </button>
-        </mat-toolbar-row>
+      <mat-toolbar-row class="d-flex justify-content-between align-items-center">
+        <div class="logo">
+          <a class="d-flex gap-3 justify-content-center">
+            <h1>Lucas Czeck</h1>
+            <p>Software Developer</p>
+          </a>                
+        </div>
+        <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
+          <mat-icon>menu</mat-icon>
+        </button>
+      </mat-toolbar-row>
     </mat-toolbar>
-</header>
-
-<div *ngIf="sideMenu" class="menu col-md-2 col-12 d-flex flex-column">
+ </header>
+  
+<div [ngClass]="{'show': sideMenu}" class="menu col-md-2 col-12 d-flex flex-column">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
+        <mat-icon>close</mat-icon>
+    </button>
+    <a class="text-center h-25 mt-4">Home</a>
     <a class="text-center h-25 mt-4">Sobre mim</a>
     <a class="text-center h-25 mt-4">Projetos</a>
     <a class="text-center h-25 mt-4 mb-4">Contato</a>

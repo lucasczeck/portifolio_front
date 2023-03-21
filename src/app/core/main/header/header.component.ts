@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
 
-  sideMenu: boolean = false
+  sideMenu: boolean = false;
 
   toggleSideMenu() {
     this.sideMenu = !this.sideMenu;

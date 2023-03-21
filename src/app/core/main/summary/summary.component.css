@@ -1,3 +1,18 @@
 .company p span {
     font-weight: bold;
 }
+
+.company {
+    padding-left: 2rem;
+}
+
+.borderSummaryHeader {
+    border-bottom: 1px solid whitesmoke;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.photo img {
+    width: 120px;
+    height: 120px;
+}
