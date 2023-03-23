@@ -12,6 +12,7 @@ import { SummaryComponent } from './core/main/summary/summary.component';
 import { DashboardComponent } from './core/main/dashboard/dashboard.component';
 import { CardProjetosPessoaisComponent } from './core/main/dashboard/card-projetos-pessoais/card-projetos-pessoais.component';
 import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-projetos-profissionais/card-projetos-profissionais.component';
+import { CardGithubComponent } from './core/main/dashboard/card-github/card-github.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-p
     SummaryComponent,
     DashboardComponent,
     CardProjetosPessoaisComponent,
-    CardProjetosProfissionaisComponent
+    CardProjetosProfissionaisComponent,
+    CardGithubComponent
   ],
   imports: [
     BrowserModule,
