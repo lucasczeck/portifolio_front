@@ -17,3 +17,9 @@ html, body {
     background-color: black;
     color: whitesmoke;
 }
+
+.card {
+  background-color: rgb(15, 15, 15);
+  color: whitesmoke;
+  padding: 10px;
+}

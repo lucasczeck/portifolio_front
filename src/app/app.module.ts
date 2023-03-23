@@ -10,13 +10,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/main/header/header.component';
 import { SummaryComponent } from './core/main/summary/summary.component';
 import { DashboardComponent } from './core/main/dashboard/dashboard.component';
+import { CardProjetosPessoaisComponent } from './core/main/dashboard/card-projetos-pessoais/card-projetos-pessoais.component';
+import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-projetos-profissionais/card-projetos-profissionais.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SummaryComponent,
-    DashboardComponent
+    DashboardComponent,
+    CardProjetosPessoaisComponent,
+    CardProjetosProfissionaisComponent
   ],
   imports: [
     BrowserModule,

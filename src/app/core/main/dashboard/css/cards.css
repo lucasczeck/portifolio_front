@@ -1,0 +1,24 @@
+.title_card {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.sub_title_card {
+    font-size: 1rem;
+}
+
+.title_content_card {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.stats_card {
+    font-size: 2rem;
+}
+
+.content_card {
+    display: flex;
+    align-items: center;
+}
