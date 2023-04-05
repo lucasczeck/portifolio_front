@@ -1,0 +1,18 @@
+header mat-toolbar { 
+    min-height: 10vh;
+}
+
+html {
+    font-size: 16px;
+}
+
+p {
+    color: whitesmoke;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
+    margin: 0 auto;
+}
+
+footer mat-toolbar {
+    background-color: black;
+}
+  
