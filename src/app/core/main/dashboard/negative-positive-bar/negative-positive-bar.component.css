@@ -9,11 +9,9 @@
 }
 
 .barra-progresso {
-    background: green;
     height: 8px;
     margin-top: -6px;
     transition: all .5s;
-    width: 44%;
 }
 
 .font-regular {

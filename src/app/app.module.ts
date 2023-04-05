@@ -15,6 +15,7 @@ import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-p
 import { CardGithubComponent } from './core/main/dashboard/card-github/card-github.component';
 import { ProgressBarComponent } from './core/main/dashboard/progress-bar/progress-bar.component';
 import { FooterComponent } from './core/main/footer/footer.component';
+import { NegativePositiveBarComponent } from './core/main/dashboard/negative-positive-bar/negative-positive-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './core/main/footer/footer.component';
     CardProjetosProfissionaisComponent,
     CardGithubComponent,
     ProgressBarComponent,
-    FooterComponent
+    FooterComponent,
+    NegativePositiveBarComponent
   ],
   imports: [
     BrowserModule,

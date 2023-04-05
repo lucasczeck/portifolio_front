@@ -1,7 +1,7 @@
-<div class="card d-flex align-items-center gap-3 flex-wrap">
+<div class="card d-flex align-items-center gap-1 flex-wrap">
     <p class="title_card">Commits:</p>
-    <div class="d-flex row col-12 justify-content-center">
-        <div class="left d-flex flex-column align-items-center col-md-5 col-12">
+    <div class="d-flex row col-12 justify-content-center align-items-center">
+        <div class="left d-flex flex-column align-items-center col-md-4 col-12">
             <div class="main">
                 <p class="title_content_card">Hoje: <span class="stats_card">0</span></p>
                 <p class="title_content_card">Na semana: <span class="stats_card">0</span></p>
@@ -9,7 +9,16 @@
                 <p class="title_content_card">No ano: <span class="stats_card">0</span></p>
             </div>
         </div>
-        <div class="right d-flex flex-column align-items-center col-md-5 col-12">
+        <div class="center d-flex flex-column align-items-center col-md-4 col-12">
+            <div class="main col-12">
+                <app-negative-positive-bar [percentage]="-50"></app-negative-positive-bar>
+                <app-negative-positive-bar [percentage]="-50"></app-negative-positive-bar>
+                <app-negative-positive-bar [percentage]="-50"></app-negative-positive-bar>
+                <app-negative-positive-bar [percentage]="-50"></app-negative-positive-bar>
+            </div>
+            
+        </div>
+        <div class="right d-flex flex-column align-items-center col-md-4 col-12">
             <div class="main">
                 <p class="title_content_card">Ontem: <span class="stats_card">0</span></p>
                 <p class="title_content_card">Última semana: <span class="stats_card">0</span></p>
