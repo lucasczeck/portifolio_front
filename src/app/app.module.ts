@@ -13,6 +13,7 @@ import { DashboardComponent } from './core/main/dashboard/dashboard.component';
 import { CardProjetosPessoaisComponent } from './core/main/dashboard/card-projetos-pessoais/card-projetos-pessoais.component';
 import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-projetos-profissionais/card-projetos-profissionais.component';
 import { CardGithubComponent } from './core/main/dashboard/card-github/card-github.component';
+import { ProgressBarComponent } from './core/main/dashboard/progress-bar/progress-bar.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CardGithubComponent } from './core/main/dashboard/card-github/card-gith
     DashboardComponent,
     CardProjetosPessoaisComponent,
     CardProjetosProfissionaisComponent,
-    CardGithubComponent
+    CardGithubComponent,
+    ProgressBarComponent
   ],
   imports: [
     BrowserModule,
