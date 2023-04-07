@@ -2,7 +2,7 @@
     <mat-toolbar>
       <mat-toolbar-row class="d-flex justify-content-between align-items-center">
         <div class="logo">
-          <a class="d-flex gap-3 justify-content-center">
+          <a routerLink="" class="d-flex gap-3 justify-content-center">
             <h1>Lucas Czeck</h1>
             <p>Software Developer</p>
           </a>                
@@ -18,8 +18,8 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
         <mat-icon>close</mat-icon>
     </button>
-    <a class="text-center h-25 mt-4">Home</a>
-    <a class="text-center h-25 mt-4">Sobre mim</a>
-    <a class="text-center h-25 mt-4">Projetos</a>
-    <a class="text-center h-25 mt-4 mb-4">Contato</a>
+    <a routerLink="" class="text-center h-25 mt-4" (click)="toggleSideMenu()">Home</a>
+    <a routerLink="sobremim" class="text-center h-25 mt-4" (click)="toggleSideMenu()">Sobre mim</a>
+    <a class="text-center h-25 mt-4" (click)="toggleSideMenu()">Projetos</a>
+    <a class="text-center h-25 mt-4 mb-4" (click)="toggleSideMenu()">Contato</a>
 </div>
