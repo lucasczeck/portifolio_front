@@ -1,5 +1,7 @@
-header mat-toolbar { 
+footer mat-toolbar { 
     min-height: 10vh;
+    background-color: #eeeeff;
+    border-top: 5px solid #ddd;
 }
 
 html {
@@ -7,12 +9,8 @@ html {
 }
 
 p {
-    color: whitesmoke;
+    color: rgb(63, 63, 63);
     font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
     margin: 0 auto;
-}
-
-footer mat-toolbar {
-    background-color: black;
 }
   

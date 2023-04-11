@@ -2,10 +2,12 @@
     font-size: 1.5rem;
     font-weight: 500;
     text-align: center;
+    color: rgb(63, 63, 63);
 }
 
 .sub_title_card {
     font-size: 1rem;
+    color: rgb(63, 63, 63);
 }
 
 .title_content_card {
@@ -13,10 +15,12 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    color: rgb(63, 63, 63);
 }
 
 .stats_card {
     font-size: 2rem;
+    color: rgb(63, 63, 63);
 }
 
 .content_card {

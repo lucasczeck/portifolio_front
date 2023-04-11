@@ -12,29 +12,30 @@ html {
 }
 
 h1 {
-    color: whitesmoke;
+    color: rgb(63, 63, 63);;
     font-family: fasthand;
     font-size: clamp(0.5rem, 1.5rem + 1vw, 3rem);
 }
 
 .logo p {
-    color: whitesmoke;
+    color: rgb(63, 63, 63);;
     font-family: fasthand;
     font-size: clamp(0.5rem, 0.5rem + 1vw, 1.2rem);
 }
 
 header mat-toolbar {
-    background-color: black;
+    background-color: #eeeeff;
+    border-bottom: 5px solid #ddd;
 }
 
 header button {
-    color: whitesmoke;
+    color: black;
     border: none;
-    background-color: black;
+    background-color: #eeeeff;
 }
 
 .menu a {
-    color: black;
+    color: rgb(63, 63, 63);;
 }
 
 .menu {
@@ -43,7 +44,7 @@ header button {
     right: 0;
     height: 100%;
     width: 300px;
-    background-color: whitesmoke;
+    background-color: #eeeeff;
     font-size: 16px;
     font-size: clamp(0.5rem, 1.5rem + 1vw, 1.5rem);
     z-index: 10;

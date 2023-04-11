@@ -14,11 +14,13 @@ html, body {
     height: 100vh;
     overflow-x: hidden;
     margin: 0 !important;
-    background-color: black;
-    color: whitesmoke;
+    background-color: #eeeeff;
+    color: rgb(63, 63, 63);;
 }
 
 .card {
-  background-color: rgb(15, 15, 15);
-  color: whitesmoke;
+  background-color: #eeeeff;
+  border: 5px solid #ddd;
+  border-radius: 2.5%;
+  color: rgb(63, 63, 63);;
 }

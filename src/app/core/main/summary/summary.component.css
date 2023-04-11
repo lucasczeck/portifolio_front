@@ -7,7 +7,7 @@
 }
 
 .borderSummaryHeader {
-    border-bottom: 1px solid whitesmoke;
+    border-bottom: 1px solid rgb(63, 63, 63);
     width: 100%;
     margin-bottom: 1rem;
 }
@@ -31,4 +31,14 @@
 
 .description {
     font-size: 1.25rem;
+}
+
+.container { 
+    background-color: #eeeeff;
+    border: 5px solid #ddd;
+    border-radius: 2.5%;
+}
+
+.summaryHeader {
+    margin: 10px;
 }
