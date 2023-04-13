@@ -1,7 +1,7 @@
 footer mat-toolbar { 
     min-height: 10vh;
     background-color: #eeeeff;
-    border-top: 5px solid #ddd;
+    border-top: 2px solid #ddd;
 }
 
 html {

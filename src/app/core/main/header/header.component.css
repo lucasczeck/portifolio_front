@@ -24,14 +24,14 @@ h1 {
 }
 
 header mat-toolbar {
-    background-color: #eeeeff;
-    border-bottom: 5px solid #ddd;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
 }
 
 header button {
     color: black;
     border: none;
-    background-color: #eeeeff;
+    background-color: white;
 }
 
 .menu a {
@@ -52,7 +52,11 @@ header button {
     transition: transform 0.3s ease-in-out;
   }
   
-  .show {
+.menu button {
+    border: None;
+}
+
+.show {
     transform: translateX(0) !important;
   }
   

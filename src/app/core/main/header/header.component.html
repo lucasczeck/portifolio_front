@@ -15,9 +15,11 @@
  </header>
   
 <div [ngClass]="{'show': sideMenu}" class="menu col-md-2 col-12 d-flex flex-column">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
+    <div class="d-flex justify-content-end align-items-center">
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" (click)="toggleSideMenu()">
         <mat-icon>close</mat-icon>
-    </button>
+      </button>
+    </div>
     <a routerLink="" class="text-center h-25 mt-4" (click)="toggleSideMenu()">Home</a>
     <a routerLink="sobremim" class="text-center h-25 mt-4" (click)="toggleSideMenu()">Sobre mim</a>
     <a class="text-center h-25 mt-4" (click)="toggleSideMenu()">Projetos</a>
