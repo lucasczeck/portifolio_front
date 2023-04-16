@@ -17,6 +17,7 @@ import { ProgressBarComponent } from './core/main/dashboard/progress-bar/progres
 import { FooterComponent } from './core/main/footer/footer.component';
 import { NegativePositiveBarComponent } from './core/main/dashboard/negative-positive-bar/negative-positive-bar.component';
 import { AboutmeComponent } from './core/main/aboutme/aboutme.component';
+import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/personal-infos.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { AboutmeComponent } from './core/main/aboutme/aboutme.component';
     ProgressBarComponent,
     FooterComponent,
     NegativePositiveBarComponent,
-    AboutmeComponent
+    AboutmeComponent,
+    PersonalInfosComponent
   ],
   imports: [
     BrowserModule,
