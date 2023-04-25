@@ -5,7 +5,7 @@
 
 @font-face {
     font-family: 'Fasthand';
-    src: url('../assets/fonts/fasthand/Fasthand-Regular.ttf') format('truetype');
+    src: url('../src/assets/fonts/fasthand/Fasthand-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
   }
