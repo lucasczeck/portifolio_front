@@ -22,7 +22,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css",
@@ -86,7 +87,6 @@
             "assets": [
               "src/favicon.ico",
               "src/assets",
-              "src/_redirects",
               {
                 "glob": "**/*",
                 "input": "src/assets/fonts/fasthand",
