@@ -3,6 +3,10 @@ a {
     cursor: pointer;
 }
 
+header {
+    margin-bottom: 10px;
+}
+
 header mat-toolbar { 
     min-height: 10vh;
 }
