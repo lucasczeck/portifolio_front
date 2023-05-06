@@ -9,11 +9,11 @@
         </div>
         <div class="content_card">
             <p class="title_content_card">Desenvolvimento: <span class="stats_card">{{ dados.development.value }}</span></p>
-            <app-progress-bar class="w-100"></app-progress-bar>           
+            <app-progress-bar class="w-100" [percentage]="dados.development.percentage"></app-progress-bar>           
         </div>
         <div class="content_card">
             <p class="title_content_card">Publicados: <span class="stats_card">{{ dados.published.value }}</span></p>
-            <app-progress-bar class="w-100"></app-progress-bar>        
+            <app-progress-bar class="w-100" [percentage]="dados.published.percentage"></app-progress-bar>        
         </div>
     </div>
 </div>
