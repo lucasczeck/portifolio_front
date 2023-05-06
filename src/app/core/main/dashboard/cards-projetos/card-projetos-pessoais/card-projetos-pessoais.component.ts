@@ -7,9 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardProjetosPessoaisComponent implements OnInit{
   dados = {
-    "finalized": {"value": 1, "percentage": 100.0}, 
-    "development": {"value": 0, "percentage": 0.0}, 
-    "published": {"value": 0, "percentage": 0.0}}
+    "finalized": {"value": 1, "percentage": 33.33}, 
+    "development": {"value": 1, "percentage": 33.33}, 
+    "published": {"value": 1, "percentage": 33.33}}
 
   constructor() {}
 

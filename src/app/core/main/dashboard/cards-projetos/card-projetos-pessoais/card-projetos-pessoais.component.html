@@ -4,15 +4,15 @@
     </div>
     <div class="main">
         <div class="content_card">
-            <p class="title_content_card">Finalizados: <span class="stats_card">{{ dados.finalized }}</span></p>
-            <app-progress-bar class="w-100"></app-progress-bar>      
+            <p class="title_content_card">Finalizados: <span class="stats_card">{{ dados.finalized.value }}</span></p>
+            <app-progress-bar class="w-100" [percentage]="dados.finalized.percentage"></app-progress-bar>      
         </div>
         <div class="content_card">
-            <p class="title_content_card">Desenvolvimento: <span class="stats_card">{{ dados.development }}</span></p>
+            <p class="title_content_card">Desenvolvimento: <span class="stats_card">{{ dados.development.value }}</span></p>
             <app-progress-bar class="w-100"></app-progress-bar>           
         </div>
         <div class="content_card">
-            <p class="title_content_card">Publicados: <span class="stats_card">{{ dados.published }}</span></p>
+            <p class="title_content_card">Publicados: <span class="stats_card">{{ dados.published.value }}</span></p>
             <app-progress-bar class="w-100"></app-progress-bar>        
         </div>
     </div>
