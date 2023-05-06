@@ -10,8 +10,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/main/header/header.component';
 import { SummaryComponent } from './core/main/summary/summary.component';
 import { DashboardComponent } from './core/main/dashboard/dashboard.component';
-import { CardProjetosPessoaisComponent } from './core/main/dashboard/card-projetos-pessoais/card-projetos-pessoais.component';
-import { CardProjetosProfissionaisComponent } from './core/main/dashboard/card-projetos-profissionais/card-projetos-profissionais.component';
+import { CardsProjetosComponent } from './core/main/dashboard/cards-projetos/cards-projetos.component';
+import { CardProjetosPessoaisComponent } from './core/main/dashboard/cards-projetos/card-projetos-pessoais/card-projetos-pessoais.component';
+import { CardProjetosProfissionaisComponent } from './core/main/dashboard/cards-projetos/card-projetos-profissionais/card-projetos-profissionais.component';
 import { CardGithubComponent } from './core/main/dashboard/card-github/card-github.component';
 import { ProgressBarComponent } from './core/main/dashboard/progress-bar/progress-bar.component';
 import { FooterComponent } from './core/main/footer/footer.component';
@@ -25,6 +26,7 @@ import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/perso
     HeaderComponent,
     SummaryComponent,
     DashboardComponent,
+    CardsProjetosComponent,
     CardProjetosPessoaisComponent,
     CardProjetosProfissionaisComponent,
     CardGithubComponent,
@@ -32,7 +34,7 @@ import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/perso
     FooterComponent,
     NegativePositiveBarComponent,
     AboutmeComponent,
-    PersonalInfosComponent
+    PersonalInfosComponent,
   ],
   imports: [
     BrowserModule,
