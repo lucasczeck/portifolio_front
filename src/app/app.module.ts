@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
+import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/main/header/header.component';
 import { SummaryComponent } from './core/main/summary/summary.component';
@@ -41,6 +42,7 @@ import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/perso
     MatToolbarModule,
     BrowserAnimationsModule,
     MatIconModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
