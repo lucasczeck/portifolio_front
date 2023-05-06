@@ -1,6 +1,6 @@
 <div class="d-flex flex-column margin-bottom-1">
     <div class="barra-background"></div>
-    <div class="barra-progresso" [style.width.%]="bgWidth" [ngStyle]="{'background-color': bgColor}"></div>
+    <div class="barra-progresso" [style.width.%]="bgWidth > 100 ? 100 : bgWidth" [ngStyle]="{'background-color': bgColor}"></div>
 </div>
 <div class="d-flex">
     <div class="flex-grow-1"></div>
