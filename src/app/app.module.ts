@@ -9,7 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import {HttpClientModule} from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/main/header/header.component';
-import { SummaryComponent } from './core/main/summary/summary.component';
+import { SummaryComponent } from './core/main/dashboard/summary/summary.component';
 import { DashboardComponent } from './core/main/dashboard/dashboard.component';
 import { CardsComponent } from './core/main/dashboard/cards/cards.component';
 import { CardsProjetosComponent } from './core/main/dashboard/cards/cards-projetos/cards-projetos.component';
