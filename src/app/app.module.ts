@@ -6,7 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 
 import { AppRoutingModule } from './app-routing.module';
-import {HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http'
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './core/header/header.component';
 import { SummaryComponent } from './core/main/dashboard/summary/summary.component';
