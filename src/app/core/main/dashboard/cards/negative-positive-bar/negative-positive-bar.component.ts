@@ -21,8 +21,9 @@ export class NegativePositiveBarComponent implements OnInit {
   private calculateValues(): void {
     this.bgColor = this.percentage < 0 ? 'red' : 'green';
     this.bgWidth = this.percentage > 0 ? this.percentage : (this.percentage * -1);
-    this.signal = this.percentage > 0 ? '+' : '';
     this.teste = this.bgWidth;
     this.negative = this.percentage > 0 ? false : true;
+    this.signal = this.negative == false ? '+' : '';
+
   }
 }
