@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SummaryService {
-  private apiUrl = 'http://127.0.0.1:8000/dashboard/summary'
+  private apiUrl = 'https://lucasczeck.up.railway.app/dashboard/summary'
   
   constructor(private http: HttpClient) { }
 
