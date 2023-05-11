@@ -12,6 +12,7 @@ export class NegativePositiveBarComponent implements OnInit {
   bgWidth: number = 0;
   signal: string = '';
   teste: number = 0;
+  negative: boolean = true;
 
   ngOnInit(): void {
     this.calculateValues();
@@ -22,5 +23,6 @@ export class NegativePositiveBarComponent implements OnInit {
     this.bgWidth = this.percentage > 0 ? this.percentage : (this.percentage * -1);
     this.signal = this.percentage > 0 ? '+' : '';
     this.teste = this.bgWidth;
+    this.negative = this.percentage > 0 ? false : true;
   }
 }

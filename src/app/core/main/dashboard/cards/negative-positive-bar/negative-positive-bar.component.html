@@ -1,4 +1,4 @@
-<div class="d-flex flex-column margin-bottom-1">
+<div class="d-flex flex-column margin-bottom-1" [ngClass]="negative ? 'align-items-end' : 'align-items-start'">
     <div class="barra-background"></div>
     <div class="barra-progresso" [style.width.%]="bgWidth > 100 ? 100 : bgWidth" [ngStyle]="{'background-color': bgColor}"></div>
 </div>
