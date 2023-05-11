@@ -17,6 +17,6 @@ export class CardsComponent implements OnInit {
   ngOnInit(): void {}
 
   getCards(): void {
-    this.data = this.cardService.getCards().subscribe((data) => this.data = data)
+    this.cardService.getCards().subscribe((data) => this.data = data)
   }
 }

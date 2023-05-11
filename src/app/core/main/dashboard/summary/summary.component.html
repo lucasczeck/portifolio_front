@@ -4,24 +4,25 @@
             <img src="assets/img/lucassummary.png" alt="Foto do Lucas">
         </div>
         <div>
-            <p class="title">Fullstack Developer</p>
+            <p class="title">{{ data.title }}</p>
         </div>
     </div>
     <div class="borderSummaryHeader"></div>
     <div class="summaryMain col-12">
         <div class="hardskills">
             <p class="category-title">Hardskills:</p>
-            <ul>
+            <div *ngFor="let skill of data.hardskills">
+              <ul>
                 <li>
-                    <span class="item-title">Python</span> 
-                    <br>
-                    <ul>
-                        <li class="description">Django</li>
-                        <li class="description">DjangoRest</li>
-                    </ul>
+                  <span class="item-title">{{ skill[Object.keys(skill)[0]].descriptive_name }}</span>
+                  <br>
+                  <ul *ngFor="let subSkill of skill[Object.keys(skill)[0]].subskills">
+                    <li class="description">{{ subSkill.descriptive_name }}</li>
+                  </ul>
                 </li>
-            </ul>
-        </div>
+              </ul>
+            </div>
+          </div>
         <div class="borderSummaryHeader"></div>
         <div class="softskills">
             <p class="category-title">Softskills:</p>
