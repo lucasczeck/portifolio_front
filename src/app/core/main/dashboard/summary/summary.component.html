@@ -14,9 +14,9 @@
             <div *ngFor="let skill of data.hardskills">
               <ul>
                 <li>
-                  <span class="item-title">{{ skill[Object.keys(skill)[0]].descriptive_name }}</span>
+                  <span class="item-title">{{ skill.descriptive_name }}</span>
                   <br>
-                  <ul *ngFor="let subSkill of skill[Object.keys(skill)[0]].subskills">
+                  <ul *ngFor="let subSkill of skill.subskills">
                     <li class="description">{{ subSkill.descriptive_name }}</li>
                   </ul>
                 </li>
@@ -26,19 +26,22 @@
         <div class="borderSummaryHeader"></div>
         <div class="softskills">
             <p class="category-title">Softskills:</p>
-            <ul>
-                <li>
-                    <span class="item-title">Capacidade de trabalhar em equipe</span>                  
-                </li>
-            </ul>
+            <div *ngFor="let skill of data.softskills">
+                <ul>
+                  <li>
+                    <span class="item-title">{{ skill.descriptive_name }}</span>
+                  </li>
+                </ul>
+              </div>
         </div>
         <div class="borderSummaryHeader"></div>
         <div class="experience">
             <p class="category-title">Ultima experiência:</p>
             <div class="company ml-2">
-                <p class="description"><span class="item-title">Empresa: </span>Inteliger</p>
-                <p class="description"><span class="item-title">De: </span>Agosto/2022 <span class="item-title">Até: </span>Atual</p>
-                <p class="description"><span class="item-title">Cargo: </span> Desenvolvedor Backend Junior II</p>
+                <p class="description"><span class="item-title">Empresa: </span>{{ data.last_experience.company }}</p>
+                <p class="description"><span class="item-title">De: </span> {{ data.last_experience.started }} <span class="item-title">Até: </span>{{ data.last_experience.end }}</p>
+                <p class="description"><span class="item-title">Cargo: </span>{{ data.last_experience.position }}</p>
+                <p class="description"><span class="item-title">Resumo: </span>{{ data.last_experience.description }}</p>
             </div>        
         </div>
     </div>

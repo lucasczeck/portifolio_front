@@ -4,6 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
+import { Summary } from 'src/app/Interfaces/Summary';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +14,7 @@ export class SummaryService {
   
   constructor(private http: HttpClient) { }
 
-  getSummary(): Observable<any> {
-    return this.http.get<any>(this.apiUrl)
+  getSummary(): Observable<Summary> {
+    return this.http.get<Summary>(this.apiUrl)
   }
 }
