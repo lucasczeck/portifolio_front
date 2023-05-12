@@ -4,6 +4,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 
 import { Observable } from 'rxjs';
 
+import { Cards } from 'src/app/Interfaces/Cards';
+
 @Injectable({
   providedIn: 'root'
 })
@@ -12,7 +14,7 @@ export class CardsService {
   
   constructor(private http: HttpClient) { }
 
-  getCards(): Observable<any> {
-    return this.http.get<any>(this.apiUrl)
+  getCards(): Observable<Cards> {
+    return this.http.get<Cards>(this.apiUrl)
   }
 }

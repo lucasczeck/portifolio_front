@@ -1,5 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { Projects } from 'src/app/Interfaces/Projects';
+
 @Component({
   selector: 'app-cards-projetos',
   templateUrl: './cards-projetos.component.html',
@@ -7,15 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class CardsProjetosComponent implements OnInit {
-  @Input() cards!: {
-      "personal":{
-        "finalized": {"value": number, "percentage": number}, 
-        "development": {"value": number, "percentage": number}, 
-        "published": {"value": number, "percentage": number}}, 
-      "professional": {
-        "finalized": {"value": number, "percentage": number}, 
-        "development": {"value": number, "percentage": number}, 
-        "published": {"value": number, "percentage": number}}}
+  @Input() cards!: Projects
 
   constructor() {}
 

@@ -1,15 +1,14 @@
 import { Component, OnInit, Input } from '@angular/core';
 
+import { CardsProjects } from 'src/app/Interfaces/CardsProjects';
+
 @Component({
   selector: 'app-card-projetos-pessoais',
   templateUrl: './card-projetos-pessoais.component.html',
   styleUrls: ['./card-projetos-pessoais.component.css', '../../css/cards.css']
 })
 export class CardProjetosPessoaisComponent implements OnInit{
-  @Input() dados!: {
-    "finalized": {"value": number, "percentage": number}, 
-    "development": {"value": number, "percentage": number}, 
-    "published": {"value": number, "percentage": number}}
+  @Input() dados!: CardsProjects
 
   constructor() {}
 
