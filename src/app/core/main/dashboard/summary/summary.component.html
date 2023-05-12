@@ -39,7 +39,7 @@
             <p class="category-title">Ultima experiência:</p>
             <div class="company ml-2">
                 <p class="description"><span class="item-title">Empresa: </span>{{ data.last_experience.company }}</p>
-                <p class="description"><span class="item-title">De: </span> {{ data.last_experience.started }} <span class="item-title">Até: </span>{{ data.last_experience.end }}</p>
+                <p class="description"><span class="item-title">De: </span> {{ data.last_experience.started | date: 'dd/MM/yyyy'}} <span class="item-title">Até: </span>{{ data.last_experience.end ? (data.last_experience.end | date: 'dd/MM/yyyy') : 'Atual'}}</p>
                 <p class="description"><span class="item-title">Cargo: </span>{{ data.last_experience.position }}</p>
                 <p class="description"><span class="item-title">Resumo: </span>{{ data.last_experience.description }}</p>
             </div>        

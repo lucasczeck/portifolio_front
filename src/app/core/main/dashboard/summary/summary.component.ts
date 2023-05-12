@@ -9,6 +9,7 @@ import { Summary } from 'src/app/Interfaces/Summary';
   templateUrl: './summary.component.html',
   styleUrls: ['./summary.component.css']
 })
+
 export class SummaryComponent implements OnInit{
   data!: Summary
   
