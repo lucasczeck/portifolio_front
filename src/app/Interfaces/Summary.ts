@@ -11,6 +11,9 @@ export interface Summary {
     softskills: [{
             descriptive_name: string, 
             description: string,
+            subskills: [{
+                descriptive_name: string, 
+                description: string}]
     }], 
     last_experience: {
         company: string, 

@@ -25,14 +25,18 @@
           </div>
         <div class="borderSummaryHeader"></div>
         <div class="softskills">
-            <p class="category-title">Softskills:</p>
-            <div *ngFor="let skill of data.softskills">
-                <ul>
-                  <li>
-                    <span class="item-title">{{ skill.descriptive_name }}</span>
-                  </li>
+          <p class="category-title">Softskills:</p>
+          <div *ngFor="let skill of data.softskills">
+            <ul>
+              <li>
+                <span class="item-title">{{ skill.descriptive_name }}</span>
+                <br>
+                <ul *ngFor="let subSkill of skill.subskills">
+                  <li class="description">{{ subSkill.descriptive_name }}</li>
                 </ul>
-              </div>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="borderSummaryHeader"></div>
         <div class="experience">
