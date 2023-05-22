@@ -1,0 +1,29 @@
+<div class="main">
+    <div class="title">
+        <h2>Profissional</h2>
+    </div>
+    <div class="infos">
+        <h3>Resumo da minha carreira:</h3>
+        <p>{{ data.career_summary }}</p>
+    </div>
+    <div class="infos">
+        <h3>Destaques:</h3>
+        <div class="highlights" *ngFor="let highlight in data.highlights">
+            <ul>
+                <li>
+                    <p>{{ highlight }}</p>>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="infos">
+        <h3>Tecnologias:</h3>
+        <div class="stacks" *ngFor="let sector in data.stacks">
+            <ul>
+                <li>
+                    <img src={{ sector.img}} alt={{ sector.descriptive_name }}>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

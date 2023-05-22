@@ -21,6 +21,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { NegativePositiveBarComponent } from './core/main/dashboard/cards/negative-positive-bar/negative-positive-bar.component';
 import { AboutmeComponent } from './core/main/aboutme/aboutme.component';
 import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/personal-infos.component';
+import { ProfessionalInfosComponent } from './core/main/aboutme/professional-infos/professional-infos.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/perso
     NegativePositiveBarComponent,
     AboutmeComponent,
     PersonalInfosComponent,
+    ProfessionalInfosComponent,
   ],
   imports: [
     BrowserModule,
