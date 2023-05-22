@@ -1,9 +1,19 @@
-<div class="cointainer">
-    <div class="photos-carousel">
-                 
+<div class="main">
+    <div class="title">
+        <h2>Pessoal</h2>
     </div>
-    <div class="infos">
-        <h2>Quem sou eu?</h2>
-        <p></p>
+    <div class="how-i-am">
+        <h3>Quem sou eu?</h3>
+        <p>{{ data.how_i_am }}</p>
+    </div>
+    <div class="hobbies">
+        <h3>Meus Hobbies:</h3>
+        <div class="list-hobbies" *ngFor="let hobbie of data.hobbies">
+            <ul>
+            <li>
+                <span>{{ hobbie.descriptive_name }}</span>
+            </li>
+            </ul>
+        </div>
     </div>
 </div>
