@@ -1,4 +1,8 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+import { PersonalInfosService } from './personal-infos.service';
+
+import { PersonalInfos } from 'src/app/Interfaces/PersonalInfos';
 
 @Component({
   selector: 'app-personal-infos',
@@ -7,9 +11,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 
 export class PersonalInfosComponent implements OnInit{
-  @Input() data!: any
+  data!: PersonalInfos
   
-  constructor() {}
+  constructor(private personalInfo: PersonalInfosService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getPersonalInfos()
+  }
+
+  getPersonalInfos(): void {
+    this.personalInfo.getPersonalInfos().subscribe((data) => this.data = data)
+  }
 }
