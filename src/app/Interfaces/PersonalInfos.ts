@@ -1,4 +1,4 @@
 export interface PersonalInfos {
-    how_i_am: string
+    who_am_i: string
     hobbies: [{descriptive_name: string}]
 }

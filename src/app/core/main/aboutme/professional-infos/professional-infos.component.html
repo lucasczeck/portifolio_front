@@ -19,9 +19,9 @@
     <div class="infos">
         <h3>Tecnologias:</h3>
         <div class="stacks" *ngFor="let sector in data.stacks">
-            <ul>
+            <ul *ngFor="let stack in sector">
                 <li>
-                    <img src={{ sector.img}} alt={{ sector.descriptive_name }}>
+                    <img src={{ stack.img }} alt={{ stack.descriptive_name }}>
                 </li>
             </ul>
         </div>

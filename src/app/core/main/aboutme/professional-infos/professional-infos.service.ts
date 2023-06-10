@@ -6,11 +6,13 @@ import { Observable } from 'rxjs';
 
 import { ProfessionalInfos } from 'src/app/Interfaces/ProfessionalInfos';
 
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ProfessionalInfosService {
-  private apiUrl = 'https://lucasczeck.up.railway.app/aboutme/professional_infos'
+  private apiUrl: string = environment.apiUrl + 'aboutme/professional_infos'
 
   constructor(private http: HttpClient) { }
 

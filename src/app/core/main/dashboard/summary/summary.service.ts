@@ -6,11 +6,13 @@ import { Observable } from 'rxjs';
 
 import { Summary } from 'src/app/Interfaces/Summary';
 
+import { environment } from 'src/environments/environment';
+
 @Injectable({
   providedIn: 'root'
 })
 export class SummaryService {
-  private apiUrl = 'https://lucasczeck.up.railway.app/dashboard/summary'
+  private apiUrl: string = environment.apiUrl + 'dashboard/summary'
   
   constructor(private http: HttpClient) { }
 
