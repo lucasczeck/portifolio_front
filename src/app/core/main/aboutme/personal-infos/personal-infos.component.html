@@ -1,19 +1,10 @@
-<div class="main">
-    <div class="title">
-        <h2>Pessoal</h2>
+<div class="main d-flex flex-column col-12">
+    <div class="infos col-12">
+        <h2>Quem sou eu?</h2>
+        <p [innerHTML]="data.who_am_i"></p>
     </div>
-    <div class="infos">
-        <h3>Quem sou eu?</h3>
-        <p>{{ data.who_am_i }}</p>
-    </div>
-    <div class="infos">
-        <h3>Meus Hobbies:</h3>
-        <div class="list-hobbies" *ngFor="let hobbie of data.hobbies">
-            <ul>
-                <li>
-                    <span>{{ hobbie.descriptive_name }}</span>
-                </li>
-            </ul>
-        </div>
+    <div class="infos col-12">
+        <h2>Minha Carreira</h2>
+        <p [innerHTML]="data.career"></p>
     </div>
 </div>
