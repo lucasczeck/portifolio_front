@@ -1,3 +1,10 @@
-<div class="container d-flex gap-5 flex-wrap justify-content-center">
-    <app-personal-infos class="col-12"></app-personal-infos>
+<div class="main d-flex flex-column align-items-center col-12">
+    <div class="infos col-10">
+        <h2 class="title">Quem sou eu?</h2>
+        <p [innerHTML]="data.who_am_i"></p>
+    </div>
+    <div class="infos col-10">
+        <h2 class="title">Minha Carreira</h2>
+        <p [innerHTML]="data.career"></p>
+    </div>
 </div>

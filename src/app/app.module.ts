@@ -20,8 +20,6 @@ import { ProgressBarComponent } from './core/main/dashboard/cards/progress-bar/p
 import { FooterComponent } from './core/footer/footer.component';
 import { NegativePositiveBarComponent } from './core/main/dashboard/cards/negative-positive-bar/negative-positive-bar.component';
 import { AboutmeComponent } from './core/main/aboutme/aboutme.component';
-import { PersonalInfosComponent } from './core/main/aboutme/personal-infos/personal-infos.component';
-import { ProfessionalInfosComponent } from './core/main/aboutme/professional-infos/professional-infos.component';
 
 @NgModule({
   declarations: [
@@ -38,8 +36,6 @@ import { ProfessionalInfosComponent } from './core/main/aboutme/professional-inf
     FooterComponent,
     NegativePositiveBarComponent,
     AboutmeComponent,
-    PersonalInfosComponent,
-    ProfessionalInfosComponent,
   ],
   imports: [
     BrowserModule,
