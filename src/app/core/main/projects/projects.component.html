@@ -1,0 +1,10 @@
+<div class="projects d-flex flex-wrap justify-content-center align-items-center align-items-stretch">
+    <div class="card m-3 col-md-3 col-12 d-flex flex-column align-items-center justify-content-center" 
+    *ngFor="let project of data.projects">
+        <img src={{project.photo}}>
+        <div class="infos mb-3 d-flex flex-column justify-content-center align-items-center" >
+            <span [innerHTML]="project.name"></span>
+            <a [href]="project.status ? project.url : null" target="_blank" [innerHTML]="project.status ? 'Acesse aqui' : ''"></a> 
+        </div>
+    </div>
+</div>
