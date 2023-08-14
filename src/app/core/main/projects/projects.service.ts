@@ -12,8 +12,11 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class ProjectsService {
-  private apiUrl: string = environment.apiUrl + 'projects/get_projects'
+  private apiUrl: string = environment.apiUrl + 'projects/get_list_projects'
   
   constructor(private http: HttpClient) { }
 
+  getProjects(): Observable<ProjectsList> {
+    return this.http.get<ProjectsList>(this.apiUrl)
+  }
 }
