@@ -21,6 +21,11 @@ import { FooterComponent } from './core/footer/footer.component';
 import { NegativePositiveBarComponent } from './core/main/dashboard/cards/negative-positive-bar/negative-positive-bar.component';
 import { AboutmeComponent } from './core/main/aboutme/aboutme.component';
 import { ProjectsComponent } from './core/main/projects/projects.component';
+import { AdminComponent } from './admin/admin.component';
+import { CoreComponent } from './core/core.component';
+import { LoginComponent } from './admin/login/login.component';
+import { ProjectAdminComponent } from './admin/project-admin/project-admin.component';
+import { HomeAdminComponent } from './admin/home-admin/home-admin.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,11 @@ import { ProjectsComponent } from './core/main/projects/projects.component';
     NegativePositiveBarComponent,
     AboutmeComponent,
     ProjectsComponent,
+    AdminComponent,
+    CoreComponent,
+    LoginComponent,
+    ProjectAdminComponent,
+    HomeAdminComponent,
   ],
   imports: [
     BrowserModule,
