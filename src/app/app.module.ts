@@ -27,6 +27,7 @@ import { CoreComponent } from './core/core.component';
 import { LoginComponent } from './admin/login/login.component';
 import { ProjectAdminComponent } from './admin/project-admin/project-admin.component';
 import { HomeAdminComponent } from './admin/home-admin/home-admin.component';
+import { CardAdminComponent } from './admin/home-admin/card-admin/card-admin.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +50,7 @@ import { HomeAdminComponent } from './admin/home-admin/home-admin.component';
     LoginComponent,
     ProjectAdminComponent,
     HomeAdminComponent,
+    CardAdminComponent,
   ],
   imports: [
     BrowserModule,
