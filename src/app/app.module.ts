@@ -28,6 +28,7 @@ import { LoginComponent } from './admin/login/login.component';
 import { ProjectAdminComponent } from './admin/project-admin/project-admin.component';
 import { HomeAdminComponent } from './admin/home-admin/home-admin.component';
 import { HeaderAdminComponent } from './admin/header-admin/header-admin.component';
+import { CardAdminComponent } from './admin/home-admin/card-admin/card-admin.component';
 
 @NgModule({
   declarations: [
@@ -51,6 +52,7 @@ import { HeaderAdminComponent } from './admin/header-admin/header-admin.componen
     ProjectAdminComponent,
     HomeAdminComponent,
     HeaderAdminComponent,
+    CardAdminComponent,
   ],
   imports: [
     BrowserModule,
