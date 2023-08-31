@@ -13,7 +13,8 @@ export class LoginService {
   isAuthenticated(): boolean {
     if(this.getToken()) {
       return true
-    } else {
+    } 
+    else {
       return false
     }
   }
