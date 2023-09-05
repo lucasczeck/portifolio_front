@@ -1,3 +1,11 @@
-.teste {
-    margin: 0 auto;
+.red { 
+    border: 4px solid red;
+}
+
+.green { 
+    border: 4px solid green;
+}
+
+.card {
+    padding: 10px
 }

@@ -9,6 +9,7 @@ import { Cards } from 'src/app/Interfaces/Cards';
   templateUrl: './cards.component.html',
   styleUrls: ['./cards.component.css']
 })
+
 export class CardsComponent implements OnInit {
   data!: Cards
 

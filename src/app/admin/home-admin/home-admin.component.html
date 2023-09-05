@@ -1,2 +1,5 @@
-<p>home-admin works!</p>
-<app-card-admin></app-card-admin>
+<div class="d-flex row w-100">
+    <div class="col-md-4 col-12" *ngFor="let card of data">
+        <app-card-admin class="w-100" [data]="card"></app-card-admin>  
+    </div>
+</div>
